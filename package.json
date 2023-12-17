@@ -1,0 +1,29 @@
+{
+  "name": "lxt-ud",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@uauth/js": "^2.8.0",
+    "next": "^14.0.4",
+    "next-themes": "^0.2.1",
+    "react": "^18.0.2",
+    "react-dom": "^18.0.2",
+    "tailwindcss": "^3.3.6"
+  },
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "description": "A Lexington WEB3 Demo built with NextJS + Unstoppable Domains (Uauth).",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "daisyui": "^4.4.20",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6"
+  }
+}
