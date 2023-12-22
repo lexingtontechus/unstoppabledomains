@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const uauth = new UAuth({
   clientID: process.env.clientID || "b5cf3299-1a6f-4aed-af56-0a18f6635532",
-  redirectUri: "https://7wjcfz-3000.csb.app/",
+  redirectUri: process.env.redirectUri || "https://7wjcfz-3000.csb.app/",
   scope: "openid wallet messaging:notifications:optional",
 });
 
