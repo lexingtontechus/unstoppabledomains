@@ -9,11 +9,12 @@
   },
   "dependencies": {
     "@uauth/js": "^2.8.0",
+    "@vercel/analytics": "^1.1.1",
     "next": "^14.0.4",
     "next-themes": "^0.2.1",
     "react": "^18.0.2",
     "react-dom": "^18.0.2",
-    "tailwindcss": "^3.3.6"
+    "tailwindcss": "^3.4.0"
   },
   "license": "MIT",
   "keywords": [
@@ -22,7 +23,7 @@
   "description": "A Lexington WEB3 Demo built with NextJS + Unstoppable Domains (Uauth).",
   "devDependencies": {
     "autoprefixer": "^10.4.16",
-    "daisyui": "^4.4.20",
+    "daisyui": "^4.4.23",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6"
   }

@@ -3,7 +3,7 @@ import Footer from "./components/footer";
 import "/styles/index.css";
 import "/styles/globals.css";
 import { Providers } from "./providers";
-//import Cal from "./components/cal";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: {
@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
