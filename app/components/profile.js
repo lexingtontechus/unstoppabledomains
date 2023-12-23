@@ -73,7 +73,9 @@ const Profile = () => {
         <h2 className="mx-auto py-2">
           Logged In ID: <span className="font-bold text-info">{user.sub}</span>
         </h2>
-        <p className="text-xs mx-auto text-info">{user.wallet_address}</p>
+        <p className="text-center text-xs mx-auto text-info">
+          {user.wallet_address}
+        </p>
         <button
           onClick={handleLogout}
           className="btn btn-block btn-secondary font-bold uppercase"

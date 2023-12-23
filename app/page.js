@@ -22,7 +22,7 @@ export default function Home() {
               <img
                 src="/logo_ud.png"
                 alt="Unstoppable Domains"
-                className="pr-4"
+                className="px-4"
               />
             </figure>
             <div className="card-body">
