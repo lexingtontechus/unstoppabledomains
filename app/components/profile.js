@@ -2,8 +2,8 @@ import UAuth from "@uauth/js";
 import { useEffect, useState } from "react";
 import { redirect } from "next/navigation";
 const uauth = new UAuth({
-  clientID: process.env.clientID || "b5cf3299-1a6f-4aed-af56-0a18f6635532",
-  redirectUri: process.env.redirectUri || "https://localhost:3000",
+  clientID: process.env.clientID,
+  redirectUri: process.env.redirectUri,
   scope: "openid wallet messaging:notifications:optional",
 });
 
