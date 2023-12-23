@@ -36,7 +36,7 @@ export default function Home() {
                 <p>Wallet Messaging & Notification</p>
                 <p>Mainnet & Solana Support</p>
               </div>
-              <div className="card-actions justify-end">
+              <div className="card-actions justify-end py-2">
                 <Profile />
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function Home() {
               href="https://unstoppabledomains.com/?ref=919f0efc41df4c6"
               alt="Unstoppable Domains"
               target="_blank"
-              className="text-primary"
+              className="text-primary font-bold"
             >
               Unstoppable Domains
             </Link>{" "}

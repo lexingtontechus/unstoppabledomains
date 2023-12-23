@@ -7,7 +7,7 @@ const Header = () => (
   <div className="navbar flex justify-between px-4 whitespace-normal uppercase">
     <div className="flex-1">
       <div className="avatar">
-        <div className="p-0 h-10 w-10">
+        <div className="p-0">
           <Link href="/">
             <Logo />
           </Link>

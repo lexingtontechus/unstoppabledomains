@@ -2,8 +2,8 @@ import UAuth from "@uauth/js";
 import { useEffect, useState } from "react";
 import { redirect } from "next/navigation";
 const uauth = new UAuth({
-  clientID: process.env.clientID,
-  redirectUri: process.env.redirectUri,
+  clientID: process.env.NEXT_PUBLIC_clientID,
+  redirectUri: process.env.NEXT_PUBLIC_redirectUri,
   scope: "openid wallet messaging:notifications:optional",
 });
 
@@ -51,7 +51,14 @@ const Profile = () => {
   };
 
   if (loading) {
-    return <>Loading...</>;
+    return (
+      <div className="btn btn-secondary btn-block uppercase font-bold text-center">
+        Loading{" "}
+        <span className="loading loading-spinner loading-xs text-neutral"></span>
+        <span className="loading loading-spinner loading-xs text-warning"></span>
+        <span className="loading loading-spinner loading-xs text-info"></span>
+      </div>
+    );
   }
 
   if (error) {
@@ -63,8 +70,10 @@ const Profile = () => {
   if (user) {
     return (
       <>
-        <h2 className="mx-auto py-2">Logged In ID: {user.sub}</h2>
-        <p className="text-xs mx-auto">{user.wallet_address}</p>
+        <h2 className="mx-auto py-2">
+          Logged In ID: <span className="font-bold text-info">{user.sub}</span>
+        </h2>
+        <p className="text-xs mx-auto text-info">{user.wallet_address}</p>
         <button
           onClick={handleLogout}
           className="btn btn-block btn-secondary font-bold uppercase"

@@ -15,7 +15,7 @@ const ThemeChanger = () => {
     <div className="flex items-center swap swap-rotate">
       {theme === "nord" ? (
         <button
-          className="btn btn-sm btn-secondary mask mask-parallelogram"
+          className="btn btn-sm btn-secondary mask mask-parallelogram-3"
           onClick={() => setTheme("sunset")}
         >
           <span className="sr-only">Dark Mode</span>
@@ -23,11 +23,11 @@ const ThemeChanger = () => {
         </button>
       ) : (
         <button
-          className="btn btn-sm btn-secondary mask mask-parallelogram-2"
+          className="btn btn-sm btn-secondary mask mask-parallelogram-4"
           onClick={() => setTheme("nord")}
         >
           <span className="sr-only">Light Mode</span>
-          🔆
+          ☀️
         </button>
       )}
     </div>
